@@ -1,0 +1,156 @@
+@import url('./styles/brand-colors.css');
+@import url('./styles/global-branding.css');
+@import url('./styles/hero-brand-system.css');
+@import url('./styles/responsive-utilities.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(60, 9%, 98%);
+  --foreground: hsl(20, 6%, 10%);
+  --muted: hsl(60, 9%, 97%);
+  --muted-foreground: hsl(20, 6%, 40%);
+  --popover: hsl(60, 9%, 98%);
+  --popover-foreground: hsl(20, 6%, 10%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 6%, 10%);
+  --border: hsl(20, 6%, 90%);
+  --input: hsl(20, 6%, 90%);
+  --primary: hsl(160, 84%, 39%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(38, 92%, 50%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(0, 84%, 60%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(160, 84%, 39%);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(20, 6%, 4%);
+  --foreground: hsl(60, 9%, 98%);
+  --muted: hsl(20, 6%, 17%);
+  --muted-foreground: hsl(20, 6%, 60%);
+  --popover: hsl(20, 6%, 4%);
+  --popover-foreground: hsl(60, 9%, 98%);
+  --card: hsl(20, 6%, 4%);
+  --card-foreground: hsl(60, 9%, 98%);
+  --border: hsl(20, 6%, 17%);
+  --input: hsl(20, 6%, 17%);
+  --primary: hsl(160, 84%, 39%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(38, 92%, 50%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(0, 84%, 60%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(160, 84%, 39%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground font-medium;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply text-primary hover:text-primary transition-colors;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Brand Button Styles - Matching Hero "Explore Our Tours" button */
+  .btn-brand-primary, .brand-btn-primary {
+    @apply px-10 py-6 rounded-full font-bold text-lg text-white 
+           bg-gradient-to-r from-emerald-600 to-emerald-700 
+           hover:from-emerald-700 hover:to-emerald-800 
+           border-2 border-emerald-500 shadow-2xl 
+           transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-brand-secondary {
+    @apply bg-brand-secondary hover:bg-brand-secondary-hover text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-brand-outline {
+    @apply border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200;
+  }
+
+  .btn-brand-accent {
+    @apply bg-brand-accent hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  /* Brand Card Styles */
+  .brand-card {
+    @apply bg-white border border-brand-primary/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:border-brand-primary;
+  }
+
+  .brand-card-teal {
+    @apply bg-gradient-to-br from-brand-light to-white border border-brand-primary/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  /* Brand Gradient Text - Matching "Bhutan's Magic" text */
+  .gradient-text, .brand-gradient-text {
+    @apply bg-gradient-to-r from-emerald-400 via-amber-400 to-emerald-400 bg-clip-text text-transparent;
+  }
+
+  /* Brand Highlight Text - Matching "Gross National Happiness" text */
+  .brand-highlight, .text-brand-highlight {
+    @apply text-emerald-400 font-semibold;
+  }
+
+  /* Brand Background Gradients */
+  .bg-brand-gradient {
+    @apply bg-gradient-to-br from-brand-primary to-brand-dark;
+  }
+
+  .bg-brand-light-gradient {
+    @apply bg-gradient-to-br from-brand-light to-white;
+  }
+
+  .bg-brand-accent-gradient {
+    @apply bg-gradient-to-br from-brand-accent to-red-700;
+  }
+
+  /* Brand Glow Effects */
+  .brand-glow {
+    @apply shadow-lg shadow-brand-primary/25;
+  }
+
+  .brand-glow-secondary {
+    @apply shadow-lg shadow-brand-secondary/25;
+  }
+
+  /* Brand Section Headers */
+  .brand-section-header {
+    @apply flex items-center justify-center gap-2 text-brand-primary font-semibold text-sm uppercase tracking-wide mb-4;
+  }
+
+  .brand-heading {
+    @apply font-bold text-brand-text;
+  }
+
+  .brand-body {
+    @apply text-brand-text/80 leading-relaxed;
+  }
+}

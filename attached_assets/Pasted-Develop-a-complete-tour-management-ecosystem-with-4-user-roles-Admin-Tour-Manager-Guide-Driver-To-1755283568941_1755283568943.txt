@@ -1,0 +1,133 @@
+Develop a complete tour management ecosystem with 4 user roles (Admin/Tour Manager, Guide/Driver, Tourist, Public Visitor) featuring:
+
+Admin Dashboard replacing seed.ts with manual UI operations
+
+Status-controlled content visibility (active/inactive)
+
+Itinerary assignment system for guides/drivers
+
+Tourist booking & payment portal
+
+AI-powered chatbot using website content
+
+Detailed Requirements
+1. Admin Dashboard Overhaul
+A. Eliminate seed.ts Dependency
+
+Provide manual data entry forms for all entities:
+
+Tours: Name, duration, difficulty level, price tiers (regular/peak season)
+
+Packages: Combined tours with bundled pricing
+
+Hotels: Star rating, amenities checklist (AC, WiFi, etc.), room types
+
+Festivals: Dates, location, cultural significance description
+
+B. Status Management System
+
+Add status: {active, inactive} field to all database schemas
+
+Implement in UI as:
+
+Toggle switches in list views (React/Switch component)
+
+Bulk action toolbar ("Mark 5 selected as inactive")
+
+Backend must:
+
+Filter API responses (GET /tours?status=active)
+
+Maintain referential integrity (prevent deletion of in-use items)
+
+C. Rich CRUD Interfaces
+Tour Creation Example:
+
+Basic Info Tab:
+
+Name (required)
+
+Description (WYSIWYG editor with image embedding)
+
+Duration (days) with calendar availability
+
+Multimedia Tab:
+
+Drag-drop zone for 10+ images (previews with delete)
+
+360° tour embedding (optional)
+
+Pricing Tab:
+
+Base price + seasonal multipliers
+
+Child/senior discounts
+
+Status Toggle:
+
+Default: inactive (require explicit activation)
+
+D. Itinerary Management
+
+Visual timeline builder (drag-drop days)
+
+Per-day features:
+
+Locations (Google Maps integration)
+
+Assigned guide/driver (searchable dropdown)
+
+Meals included (checkbox: breakfast/lunch/dinner)
+
+2. Role-Based Functionality
+A. Tour Manager (Admin)
+
+Full CRUD on all content (tours, blogs, FAQs)
+
+Guide/Driver Management:
+
+Approve registrations
+
+Assign to itineraries with workload balancing
+
+Payment Reconciliation:
+
+View Binance/credit card transactions
+
+Issue refunds
+
+B. Guide/Driver Portal
+
+Registration Flow:
+
+Public form submits: license, vehicle details, bio
+
+Admin approval required
+
+Dashboard Features:
+
+Upcoming assigned itineraries (calendar view)
+
+Tourist contact details (72h before tour)
+
+Feedback response system
+
+C. Tourist Experience
+
+Booking Journey:
+
+Select tour → Customize (add hotels/meals)
+
+Payment: Binance/crypto + credit cards (Stripe)
+
+Auto-generated:
+
+PDF itinerary
+
+Login credentials (email + temp password)
+
+Post-Tour:
+
+Star rating + text feedback
+
+Photo upload to shared gallery

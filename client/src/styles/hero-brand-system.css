@@ -1,0 +1,72 @@
+
+/* Hero Brand System - Extracted from Hero section for consistent application */
+
+/* Gradient Text - "Bhutan's Magic" style */
+.hero-gradient-text,
+.brand-magic-text,
+.brand-gradient-text {
+  background: linear-gradient(to right, #34d399, #fbbf24, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Highlight Text - "Gross National Happiness" style */
+.hero-highlight-text,
+.brand-happiness-text,
+.text-brand-highlight {
+  color: #34d399; /* emerald-400 */
+  font-weight: 600;
+}
+
+/* Primary Button - "Explore Our Tours" style */
+.hero-btn-primary,
+.brand-btn-primary,
+.btn-brand-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: white;
+  background: linear-gradient(to right, #059669, #047857);
+  border: 2px solid #10b981;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.hero-btn-primary:hover,
+.brand-btn-primary:hover,
+.btn-brand-primary:hover {
+  background: linear-gradient(to right, #047857, #065f46);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.35);
+}
+
+/* Apply to all headings across the site */
+.brand-heading-primary {
+  @apply hero-gradient-text text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+
+.brand-heading-secondary {
+  @apply text-2xl md:text-3xl font-bold text-gray-800;
+}
+
+/* Cards with Hero styling */
+.hero-brand-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-brand-card:hover {
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15), 0 8px 16px -4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}

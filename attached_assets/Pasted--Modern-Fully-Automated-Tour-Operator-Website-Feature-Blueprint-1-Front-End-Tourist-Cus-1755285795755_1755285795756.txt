@@ -1,0 +1,293 @@
+🌐 Modern, Fully Automated Tour Operator Website – Feature Blueprint
+🧑‍💻 1. Front-End (Tourist/Customer Interface)
+✅ Core Features for Tourists
+
+Tour Search & Filtering
+Filter by:
+
+Destination
+
+Duration
+
+Price range
+
+Festival dates
+
+Trekking level
+
+Travel themes (honeymoon, family, adventure, etc.)
+
+Interactive Tour Pages
+Each tour/package should include:
+
+Multiple high-resolution images & videos
+
+Day-wise itinerary
+
+Activities included
+
+Real-time availability
+
+Customization options
+
+Tour & Custom Package Booking
+
+Book pre-designed tours or create custom tours by selecting:
+
+Activities
+
+Duration
+
+Budget
+
+Themes
+
+Add-ons (hotels, flights, guides)
+
+Live pricing updates while building custom packages
+
+Itinerary Editor (Requires Login)
+
+Tourists can modify their custom itinerary
+
+Changes are sent to Tour Manager for approval
+
+Notification system (email + dashboard alerts)
+
+Hotel Booking Integration (Optional during package booking)
+
+View hotel details:
+
+Location (with map)
+
+Distance from town, airport, and landmarks (e.g., Tiger’s Nest, Dzongs)
+
+Services offered (Wi-Fi, spa, restaurant, etc.)
+
+Room types with images and pricing
+
+User reviews and ratings
+
+Flight Booking Module
+
+Real-time Druk Air / Bhutan Airlines integration
+
+Select flight routes, view schedules, pricing
+
+Add to package or book separately
+
+User Dashboard (Tourist)
+
+View booking details, invoices
+
+Edit itinerary (with approval flow)
+
+Track payment status
+
+View assigned guide & driver profiles
+
+Submit feedback (on tours, guides, hotels)
+
+Payment Gateway Integration
+
+Accept:
+
+Credit/Debit cards (Visa, Mastercard)
+
+International wallets
+
+Binance Pay (crypto)
+
+Bank transfers (optional)
+
+Send receipts and confirmations automatically
+
+Responsive UI for Slow Internet
+
+Optimized images
+
+Lightweight codebase
+
+Lazy loading and caching
+
+Progressive Web App (PWA) features
+
+Chatbot Integration
+
+AI chatbot answers:
+
+Bhutan travel queries
+
+Visa process
+
+Custom packages
+
+Activity suggestions
+
+Hotel/flight info
+
+Can fetch real-time info from website database
+
+Inquiry & Communication
+
+“Submit Enquiry” form (notifies Tour Manager)
+
+In-site messaging (Tourist ↔ Tour Manager)
+
+🛠️ 2. Admin Panel – Tour Manager Interface
+✅ Full CMS/Admin Capabilities
+
+CRUD for:
+
+Tours/Packages
+
+Activities
+
+Itineraries
+
+Hotel listings
+
+Flights (manual or integrated)
+
+Pricing and promotions
+
+Team members (guides/drivers)
+
+Custom Package Manager
+
+Build tours by combining multiple activities
+
+Define day-wise structure
+
+Assign hotels, transport, and personnel
+
+Approve or reject tourist itinerary edits
+
+Booking Management
+
+Track all bookings (confirmed/pending)
+
+Payment verification
+
+Approve/reject itinerary changes
+
+Reassign guides/drivers
+
+Personnel Management
+
+Add/edit/delete guides, drivers
+
+Assign them to tours
+
+View feedback received
+
+Send tour details via email
+
+Messaging & Notifications
+
+Tourists receive emails/alerts:
+
+When booking is confirmed
+
+When itinerary changes are approved
+
+Guides & Drivers receive:
+
+Assigned itineraries
+
+Notifications via email/dashboard
+
+Inquiry Manager
+
+View, respond to, and track tourist inquiries
+
+Export leads to CRM (optional)
+
+🧑‍✈️ 3. Guide / Driver Dashboard
+
+Login access
+
+View assigned tours (current & past)
+
+View itinerary details
+
+Access tourist info (name, nationality, preferences)
+
+Update status (“On Tour”, “Completed”, etc.)
+
+View ratings/feedback received
+
+refer these website for information "www.bookmytour.bt – Modern, clean UI, well-structured packages
+
+www.trulybhutan.com – Detailed package structure and themes
+
+www.breathebhutan.com – Unique and activity-based trip plans
+
+www.visitbhutan.com – Covers wide information on Bhutan
+
+www.amedewa.com – Offers flights, hotels, tours; responsive layout
+
+www.drukasiatours.com — Druk Asia Tours & Treks (largest and most-reviewed Bhutan operator) 
+drukasiatours.com
+drukasia.com
+
+www.bhutanpeacefultour.com — Bhutan Peaceful Tours & Treks (eco-friendly cultural and trekking tours) 
+bhutanpeacefultour.com
+
+www.bhutantraveladvisor.com — Bhutan Swallowtail Travels (luxury, private tailored tours) 
+bhutantraveladvisor.com
+bhutanswallowtail.com
+
+www.bhutantptours.com — TP Tours & Treks (online tour booking, customizable & eco-conscious) 
+TP Tours & Treks - breath & explore
+
+www.bhutanswallowtail.com — Alternate domain for Bhutan Swallowtail (luxury/tailor-made holidays) 
+bhutanswallowtail.com
+
+www.drukasia.com — Druk Asia main portal (tailor-made tours, visa guarantee) 
+drukasia.com
++1
+
+www.windhorseindiatours.com — Wind Horse India Tours (specializing in personalized Bhutan experiences) 
+bhutan.windhorseindiatours.com
+windhorseindiatours.com
+
+www.bhutanecoventure.com — AHKE Adventure Travel (custom festival, trekking, cultural tours) 
+AsianBusinessHub.Com
+
+www.waytobhutan.com — A Way to Bhutan Tours & Travels (specializes in festival, botanical, photography tours) 
+AsianBusinessHub.Com
+
+www.totallybhutan.com — Adventure Bhutan Travel (family tours, biking, rafting, birding) 
+AsianBusinessHub.Com
+
+www.aakarling.com — Aakarling Expeditions (cultural, wellness, trekking, bird watching) 
+AsianBusinessHub.Com
+
+www.pelyangbhutantours.com.bt — Pelyang Bhutan Tours (sustainable, immersive local experiences) 
+rstravels.co.in
+
+www.gurusiddhitravels.com — Guru Siddhi Tours & Treks (Paro-based, slow and peaceful journeys) 
+rstravels.co.in
+
+www.rstravels.co.in — (RS Travels page featuring many Bhutan operators including Pelyang & Guru Siddhi) 
+rstravels.co.in
+
+www.bhutandestinationtours.com — Zoid Jin Tour (registered, offers ticketing & custom packages) 
+bhutandestinationtours.com
+
+www.bhutantripplanner.com — Bhutan Trip Planner (top recommended operators & insights) 
+bhutantripplanner.com
++1
+
+www.asianbusinesshub.com/bhutan — List of Bhutan travel agencies: AHKE, A Way To Bhutan, A.B. Travel, Aakarling 
+AsianBusinessHub.Com
+
+www.swantour.com/blogs/travel-agents-in-bhutan — Lists top agents like Druk Asia, Bhutan Swallowtail, Tour Bhutan, etc. 
+Swan Tours
+
+www.kamakhyabhutan.com/blog/list-of-11-leading-travel-agencies-and-tour-operators-in-bhutan — Includes All Bhutan Connection, Heavenly Bhutan Travels, etc. 
+kamakhyabhutan.com
+
+www.travellersquest.com/blog/best-bhutan-tour-operators — Highlights Heavenly Bhutan Travels, Keys to Bhutan, and others 
+Travellers Quest" add tour, hotel, activities from these site to my site but rephrase 

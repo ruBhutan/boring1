@@ -1,0 +1,91 @@
+Prompt: Admin Dashboard for Tour Operator Website
+Objective:
+Develop a secure, intuitive, and feature-rich Admin Dashboard that allows Tour Managers to manage:
+
+Tours & Packages (CRUD)
+
+Hotels & Accommodations (CRUD)
+
+Pricing & Discounts (Dynamic Pricing)
+
+Categories & Tags (Adventure, Cultural, Luxury, etc.)
+
+Multi-Image Upload (Drag & Drop, Bulk Upload)
+
+User & Booking Management
+
+Key Features & Requirements:
+1. User Authentication & Role-Based Access
+Secure login (JWT/OAuth) for Tour Manager (Admin).
+
+Role-based permissions (e.g., Admin, Editor, Support).
+
+Session management (Auto-logout after inactivity).
+
+2. Dashboard Overview
+Analytics Widgets (Total bookings, revenue, pending requests).
+
+Quick Actions (Add New Tour, View Bookings, Manage Hotels).
+
+Recent Activity Log (Last updates, new bookings).
+
+3. CRUD Operations (Core Modules)
+A. Tours & Packages Management
+Create/Edit Tours:
+
+Title, Description, Duration, Difficulty Level.
+
+Multiple Images Upload (Drag & Drop, Preview, Delete).
+
+Itinerary Builder (Day-wise breakdown with locations).
+
+Inclusions/Exclusions (Checklist format).
+
+Dynamic Pricing:
+
+Base price, seasonal pricing, group discounts.
+
+Categories & Tags:
+
+Filter by (Adventure, Cultural, Luxury, Trekking).
+
+B. Hotel & Accommodation Management
+Add/Edit Hotels:
+
+Name, Location (Google Maps integration), Star Rating.
+
+Amenities (WiFi, Pool, Restaurant – Checkbox Selection).
+
+Room Types (Deluxe, Suite – with pricing).
+
+Gallery Upload (Multiple images per hotel).
+
+C. Booking & Customer Management
+View/Cancel Bookings.
+
+Export bookings (CSV/Excel).
+
+Customer details (Name, Email, Contact).
+
+D. Pricing & Discounts
+Set dynamic pricing (Peak season, group discounts).
+
+Coupon code generator.
+
+4. Multi-Image Upload System
+Drag & Drop or Bulk Upload.
+
+Image Preview & Thumbnails.
+
+Delete/Replace individual images.
+
+Compression (Auto-resize to optimize loading).
+
+5. UI/UX Requirements
+Modern & Clean Interface (Dark/Light Mode).
+
+Responsive Design (Works on desktop & tablet).
+
+Real-Time Updates (No page reload for CRUD actions).
+
+Confirmation Modals (Before delete actions).

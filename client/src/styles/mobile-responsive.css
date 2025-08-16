@@ -1,0 +1,451 @@
+
+/* Mobile-First Responsive Design System */
+
+/* Base Mobile Styles */
+@media (max-width: 640px) {
+  /* Typography */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Navigation */
+  .mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem 0;
+  }
+  
+  .mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem;
+    color: #6b7280;
+    font-size: 0.75rem;
+    text-decoration: none;
+  }
+  
+  .mobile-nav-item.active {
+    color: #0d9488;
+  }
+  
+  .mobile-nav-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Cards */
+  .tour-card-mobile {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tour-card-mobile .image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .tour-card-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tour-card-mobile .content {
+    padding: 1rem;
+  }
+  
+  .tour-card-mobile .title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+  }
+  
+  .tour-card-mobile .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .tour-card-mobile .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0d9488;
+  }
+  
+  /* Buttons */
+  .btn-mobile {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary-mobile {
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary-mobile:hover {
+    background: linear-gradient(135deg, #0f766e, #0d9488);
+    transform: translateY(-1px);
+  }
+  
+  .btn-outline-mobile {
+    border: 2px solid #0d9488;
+    color: #0d9488;
+    background: white;
+  }
+  
+  .btn-outline-mobile:hover {
+    background: #0d9488;
+    color: white;
+  }
+  
+  /* Forms */
+  .form-mobile {
+    padding: 1rem;
+  }
+  
+  .form-mobile .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-mobile label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+  
+  .form-mobile input,
+  .form-mobile select,
+  .form-mobile textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form-mobile input:focus,
+  .form-mobile select:focus,
+  .form-mobile textarea:focus {
+    outline: none;
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+  }
+  
+  /* Filters */
+  .filter-mobile {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 20;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .filter-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .filter-tab {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    background: #f3f4f6;
+    border-radius: 2rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .filter-tab.active {
+    background: #0d9488;
+    color: white;
+  }
+  
+  /* Search */
+  .search-mobile {
+    position: relative;
+    margin: 1rem;
+  }
+  
+  .search-mobile input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid #d1d5db;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background: #f9fafb;
+  }
+  
+  .search-mobile .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Hotel Cards */
+  .hotel-card-mobile {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hotel-card-mobile .image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hotel-card-mobile .category-badge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0d9488;
+  }
+  
+  .hotel-card-mobile .content {
+    padding: 1rem;
+  }
+  
+  .hotel-card-mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hotel-card-mobile .name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+  
+  .hotel-card-mobile .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .hotel-card-mobile .location {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hotel-card-mobile .amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hotel-card-mobile .amenity {
+    background: #f0fdf4;
+    color: #166534;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .hotel-card-mobile .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hotel-card-mobile .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0d9488;
+  }
+  
+  .hotel-card-mobile .price-note {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  /* Content spacing */
+  .mobile-section {
+    padding: 1rem;
+  }
+  
+  .mobile-hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Bottom padding for mobile nav */
+  .mobile-content {
+    padding-bottom: 5rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tablet-hero {
+    padding: 3rem 2rem;
+  }
+  
+  .tablet-section {
+    padding: 2rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .desktop-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .desktop-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .desktop-hero {
+    padding: 4rem 2rem;
+  }
+  
+  .desktop-section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Large Screen Styles (TV/Projector) */
+@media (min-width: 1920px) {
+  .large-screen-container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  
+  .large-screen-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .large-screen-title {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  
+  .large-screen-section {
+    padding: 6rem 3rem;
+  }
+  
+  .large-screen-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+  }
+  
+  .large-screen-card {
+    transform: scale(1.1);
+  }
+}
+
+/* Touch-friendly interactions */
+@media (pointer: coarse) {
+  button,
+  .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .touch-target {
+    padding: 0.75rem;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .mobile-nav {
+    background: #1f2937;
+    border-top-color: #374151;
+  }
+  
+  .mobile-nav-item {
+    color: #9ca3af;
+  }
+  
+  .mobile-nav-item.active {
+    color: #14b8a6;
+  }
+  
+  .tour-card-mobile,
+  .hotel-card-mobile {
+    background: #1f2937;
+  }
+  
+  .tour-card-mobile .title,
+  .hotel-card-mobile .name {
+    color: white;
+  }
+}
