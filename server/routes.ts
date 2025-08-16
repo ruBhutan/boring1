@@ -10,6 +10,7 @@ import { z } from "zod";
 import { db } from "./db";
 import { simpleSeed } from "./simple-seed";
 import { storage } from "./storage";
+import { processPayment } from "./payment";
 import { enhancedToursData } from "./enhanced-tours";
 import { enhancedHotelsData } from "./enhanced-hotels";
 import { enhancedFestivalsData } from "./enhanced-festivals";
@@ -1229,6 +1230,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ message: "Webhook processed successfully" });
     } catch (error) {
       res.status(500).json({ message: "Failed to process webhook" });
+    }
+  });
+
+  app.post("/api/payments/charge", async (req, res) => {
+    try {
+      const paymentData = req.body;
+      const result = await processPayment(paymentData);
+      res.json(result);
+    } catch (error) {
+      if (error instanceof Error) {
+        res.status(400).json({ message: error.message });
+      } else {
+        res.status(500).json({ message: "Payment processing failed" });
+      }
     }
   });
 

@@ -82,23 +82,37 @@ export function PaymentGateway({
 
   const handlePayment = async () => {
     setIsProcessing(true);
-    
+
+    const paymentPayload = {
+      amount: totalAmount,
+      currency,
+      method: selectedPaymentMethod,
+      bookingDetails,
+      cardDetails: selectedPaymentMethod === 'card' ? cardDetails : undefined,
+    };
+
     try {
-      // Simulate payment processing
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      const paymentData = {
-        transactionId: `TXN${Date.now()}`,
-        method: selectedPaymentMethod,
-        amount,
-        currency,
-        status: 'completed',
-        timestamp: new Date().toISOString()
-      };
-      
-      onPaymentSuccess(paymentData);
+      const response = await fetch('/api/payments/charge', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(paymentPayload),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        onPaymentSuccess({
+          ...result,
+          method: selectedPaymentMethod,
+          amount: totalAmount,
+        });
+      } else {
+        onPaymentError(result.message || 'Payment failed');
+      }
     } catch (error) {
-      onPaymentError('Payment processing failed. Please try again.');
+      onPaymentError('An unexpected error occurred. Please try again.');
     } finally {
       setIsProcessing(false);
     }
